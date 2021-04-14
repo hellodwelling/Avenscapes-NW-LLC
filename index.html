@@ -29,7 +29,7 @@
 <body>
 
 
-<div class="sticky w-full lg:h-25 lg:py-5 items-start justify-start text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
+<div class="sticky w-full lg:h-25 lg:py-5 items-start justify-start  bg-white  text-gray-700   dark-mode:text-gray-200 dark-mode:bg-gray-800">
   <div x-data="{ open: false }" class="flex flex-col lg:flex-r max-w-screen-xl px-4 mx-auto lg:items-center lg:justify-between lg:flex-row lg:px-6 lg:px-8">
     <div class="py-4 flex flex-row items-center justify-between">
      
@@ -53,7 +53,7 @@
       
     
       
-      <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#testimonials">Testimonials</a>   
+      <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#testimonials">Testimonials &amp; Reviews</a>   
          
       
       <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#faqs">Faqs</a>
@@ -62,8 +62,10 @@
       <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#find-us">Find Us</a>
       
       
-      <div class = "px-4 py-2 lg:pb-3 mt-2 text-xl font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"x-data="{open: false}">
-      <a x-on:click.prevent="open = true" class="" href="">Send Us a Text</a>
+         <div class = "px-4 py-2 lg:pb-3 mt-2 text-xl font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"x-data="{open: false}">
+        
+            <a x-on:click.prevent="open = true" class="" href="">Send Us a Text</a>
+        
       
         <div x-show.transition.opacity="open" class="p-4 fixed flex justify-center items-center inset-0 bg-black bg-opacity-75 z-50">
                 <form x-on:click.away="open = false" x-show.transition="open" class="max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
@@ -98,19 +100,19 @@
   
 <div class = "flex w-full flex-col">
 
-<section class="flex flex-col w-full bg-gray-900 lg:flex-row lg:flex-wrap sm:mx-auto">
+<section class="flex flex-col w-full  bg-gray-900 text-white  lg:flex-row lg:flex-wrap sm:mx-auto">
     <div class="flex justify-end p-8 bg-gray-900 lg:py-32 lg:px-16 lg:pl-10 lg:w-1/2">
         <div class="flex flex-col items-center lg:items-start justify-center w-full lg:max-w-lg">
-            <h5 class="mb-3 text-3xl text-center font-extrabold text-white leading-none sm:text-4xl lg:text-7xl text-center lg:text-left">
+            <h5 class="mb-3 text-3xl text-center font-extrabold  leading-none sm:text-4xl lg:text-7xl text-center lg:text-left">
                 Avenscapes NW, LLC
             </h5>
             
-            <p class="py-5 mb-5 text-white lg:text-xl text-center lg:text-left">
+            <p class="py-5 mb-5 lg:text-xl text-center lg:text-left">
                 Exceptional, Professional Service. We treat customers like family.
             </p>
             
             <div class="flex text-center justify-center items-center" x-data="{open: false}">
-                <button type="button" x-on:click.prevent="open = true" class="inline-flex items-center justify-center bg-gray-200 h-24 px-6 lg:mr-6 tracking-wide text-black transition duration-200 rounded-lg hover:bg-white hover:text-gray-400 focus:shadow-outline focus:outline-none">
+                <button type="button" x-on:click.prevent="open = true" class="inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-gray-200 text-black hover:bg-white hover:text-gray-400 ">
                     <h5 class="text-3xl font-extrabold">Send us a text</h5> 
                 </button>
                 <div x-show.transition.opacity="open" class="p-4 fixed flex justify-center items-center inset-0 bg-black bg-opacity-75 z-50">
@@ -151,18 +153,18 @@
 
   
 
-    <section id = "about" class="flex flex-col flex-grow w-full overflow-hidden bg-white lg:flex-row sm:mx-auto text-gray-900">
+    <section id = "about" class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  bg-white text-gray-900 ">
         <div class="relative lg:w-1/2">
             
             <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Aven_Prof_Update.png" alt="About Us Image" class="object-cover w-full lg:absolute h-80 lg:h-full">
             
         </div>
-        <div class="py-5 lg:py-0 flex flex-col bg-white lg:py-32 lg:px-16 lg:w-1/2">
+        <div class="py-5 lg:py-0 flex flex-col lg:py-32 lg:px-16 lg:w-1/2">
             <div class="flex flex-col items-center lg:items-start w-full lg:max-w-lg">
                 <h5 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl">
                     About Us
                 </h5>
-                <p class="py-5 px-5 lg:px-0 mb-5 text-center lg:text-left text-gray-900 lg:text-xl">
+                <p class="py-5 px-5 lg:px-0 mb-5 text-center lg:text-left  lg:text-xl">
                 Yard maintenance and home improvement LLC that offers fast, affordable, high quality work. We are a customer-first company and you are always a priority. Our team is professional, trained, and ready to take care of all your lawn care needs.
                 </p>                
             </div>
@@ -175,7 +177,7 @@
                 <div class="mb-30 mx-auto w-1/3  " data-aos="fade-down" data-aos-delay="400">
                     <span class = "text-gray-400"> <i class="fas fa-shield-alt fa-2x "></i> </span>
                     
-                    <div class="mt-5 text-md font-bold text-gray-900 uppercase">
+                    <div class="mt-5 text-md font-bold  uppercase">
                         Insured
                     </div>
   
@@ -188,13 +190,14 @@
             
                 <div class="mb-30 mx-auto w-1/3 " data-aos="fade-down" data-aos-delay="400">
                     <span class = "text-gray-400"> <i class="fas fa-heart fa-2x "></i> </span>
-                    <div class="mt-5 text-md font-bold text-gray-900 uppercase">
+                    <div class="mt-5 text-md font-bold  uppercase">
                         Family Owned
                     </div>
                     <br>
                 </div>
             	
             	
+            
             
             </div>
             
@@ -212,17 +215,24 @@
                 
                 
                 
+                
+                 
+                                 
                            
                   
                </div>
             
+            
         </div>
+        
+        
+
 
     </section>
 </div>
     
     
-    <section id= "services" class="lg:mt-0 relative w-full px-8 font-sans leading-6 bg-gray-900 border-0 border-gray-200 border-solid text-white">
+    <section id= "services" class="lg:mt-0 relative w-full px-8 font-sans leading-6  bg-gray-900 border-0 border-gray-200 text-white border-solid ">
         <div class="flex flex-col items-center max-w-6xl px-8 py-20 mx-auto leading-6 border-solid md:items-stretch md:justify-center md:py-24">
             
             <h5 class="mb-3 lg:pr-9 text-3xl mx-auto font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide text-center">
@@ -235,78 +245,78 @@
             <div class="grid grid-cols-3 gap-5 mt-10 sm:grid-cols-8 lg:grid-cols-12">
 
                     
-                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 text-white">
+                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 ">
                     <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
                         
-                        <div class="md:mt-6 font-sans text-center border-0 border-gray-200  text-gray-400">
-                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid text-gray-400">Mowing</span>
+                        <div class="md:mt-6 font-sans text-center border-0 border-gray-200 ">
+                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid  text-gray-400  ">Power Washing</span>
                             <p
-                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center text-white border-solid ">
-                                A big part of lawn maintenance is ensuring your lawn is regularly mowed. We know life gets busy, and we are here to help keep your lawn looking fresh.
-                            </p>
-                        </div>
-                    </div>
-                </div>        
-                    
-                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 text-white">
-                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
-                        
-                        <div class="md:mt-6 font-sans text-center border-0 border-gray-200  text-gray-400">
-                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid text-gray-400">Power Washing</span>
-                            <p
-                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center text-white border-solid ">
+                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center    border-solid ">
                                 We can make your outdoor surfaces look brand new again. We have the equipment and experience for all applications of power washing!
                             </p>
                         </div>
                     </div>
                 </div>        
                     
-                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 text-white">
+                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 ">
                     <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
                         
-                        <div class="md:mt-6 font-sans text-center border-0 border-gray-200  text-gray-400">
-                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid text-gray-400">Roof Cleaning</span>
+                        <div class="md:mt-6 font-sans text-center border-0 border-gray-200 ">
+                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid  text-gray-400  ">Roof Cleaning</span>
                             <p
-                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center text-white border-solid ">
+                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center    border-solid ">
                                 Roof and gutter cleaning is not just a task. It can be hazardous and blocked gutters are more than undesirable– they can cause substantial water damage to your property. We take care of roof and gutter clean outs to eliminate obstructions and debris.
                             </p>
                         </div>
                     </div>
                 </div>        
                     
-                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 text-white">
+                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 ">
                     <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
                         
-                        <div class="md:mt-6 font-sans text-center border-0 border-gray-200  text-gray-400">
-                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid text-gray-400">Mulch Installation</span>
+                        <div class="md:mt-6 font-sans text-center border-0 border-gray-200 ">
+                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid  text-gray-400  ">Mulch Installation</span>
                             <p
-                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center text-white border-solid ">
+                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center    border-solid ">
                                 Mulch is used to help maintain the health of your landscape and adds a professional touch to any planter. It can be placed over soil to lock in moisture and improve soil conditions to encourage a healthier lawn. We provide a variety of professional mulching services.
                             </p>
                         </div>
                     </div>
                 </div>        
                     
-                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 text-white">
+                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 ">
                     <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
                         
-                        <div class="md:mt-6 font-sans text-center border-0 border-gray-200  text-gray-400">
-                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid text-gray-400">Sod Layouts</span>
+                        <div class="md:mt-6 font-sans text-center border-0 border-gray-200 ">
+                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid  text-gray-400  ">Mowing</span>
                             <p
-                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center text-white border-solid ">
+                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center    border-solid ">
+                                A big part of lawn maintenance is ensuring your lawn is regularly mowed. We know life gets busy, and we are here to help keep your lawn looking fresh.
+                            </p>
+                        </div>
+                    </div>
+                </div>        
+                    
+                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 ">
+                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
+                        
+                        <div class="md:mt-6 font-sans text-center border-0 border-gray-200 ">
+                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid  text-gray-400  ">Sod Layouts</span>
+                            <p
+                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center    border-solid ">
                                 Nothing makes for a better yard than new sod to restart the fresh green look of a property. We offer partial yard and full yard sod layouts.
                             </p>
                         </div>
                     </div>
                 </div>        
                     
-                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 text-white">
+                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 ">
                     <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
                         
-                        <div class="md:mt-6 font-sans text-center border-0 border-gray-200  text-gray-400">
-                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid text-gray-400">Tree Planting/Trimming/Removal</span>
+                        <div class="md:mt-6 font-sans text-center border-0 border-gray-200 ">
+                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid  text-gray-400  ">Tree Planting/Trimming/Removal</span>
                             <p
-                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center text-white border-solid ">
+                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center    border-solid ">
                                 From planting a new tree to trimming and removal we can transform your property. Our experienced landscapers will rid your home overgrowth and keep your trees looking immaculate.
                             </p>
                         </div>
@@ -318,46 +328,46 @@
     </section>
     
     
-    <div id="our-work" class="relative mb-0 w-full pt-12 overflow-hidden bg-white md:pt-20 xl:pt-20 xl:pb-20">
+    <div id="our-work" class="relative mb-0 w-full pt-12 overflow-hidden  bg-white text-gray-900   md:pt-20 xl:pt-20 xl:pb-20">
         <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
-                <h5 class="mb-3 text-3xl text-gray-900 font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Our Best Work</h5>
+                <h5 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Our Best Work</h5>
                 <p class="my-3 mb-10 text-xl font-medium text-gray-500 text-center">See why our customers love us</p>
                 <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row">
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/4UB2E3ZY80AB11XL3HU7ZJQSWRINDTC9D0TB8X73.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Y2AKJRSNJ5I8J7PNM99X0U53GXLBVRFC56LY185M.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/B4K27JIYXNKXNJ1GGWZBZFFDI4BOK85GEJEWF4E4.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/78P4JV77ZQ8WAGACTI4IELSZE0103MUT7VO9ZVB0.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/SRHUCHG0QVP5J57DBOWOLM3RMP1NEL6YRHJUT7FT.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/VDFRPDRNH96HE2SXQ9PZKY2LOCZT90JFTXZS7UD8.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/S7AZAW9XO66H3JOOJ7FBJ8ZFD4E0EL1JDSATQOJF.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/59MCB04OFTYX53Z7IS1XT63HNCC7K188SANUC39S.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Y2AKJRSNJ5I8J7PNM99X0U53GXLBVRFC56LY185M.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/AH8CVXVQUS7EG3CA7UKVOA3D3HQ83AOX3YVS4LTU.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/78P4JV77ZQ8WAGACTI4IELSZE0103MUT7VO9ZVB0.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/4UB2E3ZY80AB11XL3HU7ZJQSWRINDTC9D0TB8X73.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/VDFRPDRNH96HE2SXQ9PZKY2LOCZT90JFTXZS7UD8.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/SRHUCHG0QVP5J57DBOWOLM3RMP1NEL6YRHJUT7FT.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/59MCB04OFTYX53Z7IS1XT63HNCC7K188SANUC39S.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/B4K27JIYXNKXNJ1GGWZBZFFDI4BOK85GEJEWF4E4.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/AH8CVXVQUS7EG3CA7UKVOA3D3HQ83AOX3YVS4LTU.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/S7AZAW9XO66H3JOOJ7FBJ8ZFD4E0EL1JDSATQOJF.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                  
                 </div>     
@@ -367,17 +377,17 @@
     
     
     
-    <div id= "testimonials" class="flex items-center justify-center bg-gray-900 py-20 min-w-screen px-4">
-        <div class="px-16 bg-gray-900">
+    <div id= "testimonials" class="flex items-center justify-center  bg-gray-900 text-white  py-20 min-w-screen px-4">
+        <div class="px-16 ">
             <div class="container flex flex-col items-center lg:items-startmx-auto lg:items-center">
                 <div class = "sm:mb-4 md:mb-0">
-                <p class="relative flex  text-center sm:justify-center sm:mb-8 md:justify-start w-full text-lg font-bold tracking-wider text-white uppercase lg:justify-center lg:items-center mb-10">Don't just take our word for it</p>
+                <p class="relative flex  text-center sm:justify-center sm:mb-8 md:justify-start w-full text-lg font-bold tracking-wider uppercase lg:justify-center lg:items-center mb-10">Don&#x27;t just take our word for it</p>
                 </div>
 
 
-                <h5 class="mb-3 text-3xl text-white font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide text-center">
+                <h5 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide text-center">
                     
-                    Testimonials & Reviews</h5>
+                    Testimonials &amp; Reviews</h5>
                 <div class="block w-full h-1 max-w-lg mt-6 bg-purple-100 rounded-full"></div>
                 <div class="items-start justify-start w-full mt-12 mb-4 lg:flex lg:flex-wrap">
 
@@ -387,24 +397,24 @@
                     <div class="flex items-start ">
                         
                         <div class="flex flex-col justify-start items-center lg:items-start ">
-                            <h4 class="font-bold text-gray-200">Nick Ornitz</h4>
-                            <p class="text-gray-200">Homeowner</p>
+                            <h4 class="font-bold  text-gray-200  ">Nick Ornitz</h4>
+                            <p class=" text-gray-200 ">Homeowner</p>
                             <div class="flex flex-row items-start ">
                                 
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
                                 
                             </div>
-                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-white text-center lg:text-left">"David and the Avenscapes team are fantastic! The do quality work and have years of experience! Highly recommend."</blockquote>                           
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl lg:text-left   text-white ">"David and the Avenscapes team are fantastic! The do quality work and have years of experience! Highly recommend."</blockquote>                           
                         </div>
                     </div>
                     
@@ -416,24 +426,24 @@
                     <div class="flex items-start ">
                         
                         <div class="flex flex-col justify-start items-center lg:items-start ">
-                            <h4 class="font-bold text-gray-200">Shannon Smith</h4>
-                            <p class="text-gray-200">Homeowner</p>
+                            <h4 class="font-bold  text-gray-200  ">Shannon Smith</h4>
+                            <p class=" text-gray-200 ">Homeowner</p>
                             <div class="flex flex-row items-start ">
                                 
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
                                 
                             </div>
-                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-white text-center lg:text-left">"The Avenscape team is great! The are friendly and took care of all our lawn care needs with class!"</blockquote>                           
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl lg:text-left   text-white ">"The Avenscape team is great! The are friendly and took care of all our lawn care needs with class!"</blockquote>                           
                         </div>
                     </div>
                     
@@ -449,11 +459,11 @@
     </div>
     
 
-<section id= "faqs" class="py-16 bg-white md:py-20 lg:py-24">
+<section id= "faqs" class="py-16   bg-white text-gray-900  md:py-20 lg:py-24">
     <div class="max-w-5xl px-12 mx-auto xl:px-0">
 
-        <h2 class="text-3xl text-gray-900 font-bold md:text-4xl lg:text-6xl xl:text-7xl text-center lg:text-left">FAQs</h2>
-        <p class="mt-4 text-xl font-thin text-gray-900 lg:text-2xl text-center lg:text-left">Your questions answered</p>
+        <h2 class="text-3xl  font-bold md:text-4xl lg:text-6xl xl:text-7xl text-center lg:text-left">FAQs</h2>
+        <p class="mt-4 text-xl font-thin  lg:text-2xl text-center lg:text-left">Your questions answered</p>
 
         <div class="relative mt-12 space-y-3">
 
@@ -485,10 +495,10 @@
 
 
 
-<section id="find-us" class="py-16 bg-white md:py-20 lg:py-20">
+<section id="find-us" class="py-16   bg-white text-gray-900  md:py-20 lg:py-20">
     <div class="max-w-5xl px-12 mx-auto text-center xl:px-0">
 
-    <h5 class="mb-5 text-3xl text-gray-900 mx-auto text-center font-extrabold leading-none sm:text-4xl lg:text-7xl"> Find Us</h5>
+    <h5 class="mb-5 text-3xl  mx-auto text-center font-extrabold leading-none sm:text-4xl lg:text-7xl"> Find Us</h5>
     <iframe
             width="100%"
             height="500px"
@@ -504,7 +514,7 @@
 <section class="py-10 bg-gray-900">
     
         <div class="flex flex-col justify-around text-center md:flex-row">
-            <p class="order-last text-sm leading-tight text-gray-500 md:order-first"> Crafted with <a  href="https://www.prophone.com/prosite" class="text-white">ProPhone</a>. Built with ❤️ by our team. </p>
+            <p class="order-last text-sm leading-tight text-gray-500 md:order-first"> Crafted with <a  href="https://www.prophone.com/prosite" class="  text-white ">ProPhone</a>. Built with ❤️ by our team. </p>
              
             <ul class="flex flex-row flex-wrap text-center justify-center pb-3 lg:-ml-4 lg:-mr-4 text-sm">
                 <li> <a href="#about" class="px-2 md:px-4 text-gray-500 hover:text-white">About Us</a> </li>
@@ -515,7 +525,7 @@
                 <li> <a href="#our-work" class=" px-2 md:px-4 text-gray-500 hover:text-white">Our Best Work</a> </li>
                 
                 
-                <li> <a href="#testimonials" class="px-2 md:px-4 text-gray-500 hover:text-white">Testimonials</a></li>
+                <li> <a href="#testimonials" class="px-2 md:px-4 text-gray-500 hover:text-white">Testimonials &amp; Reviews</a></li>
                 
                 
                 <li> <a href="#faqs" class="px-2 md:px-4 text-gray-500 hover:text-white">Faqs</a></li>

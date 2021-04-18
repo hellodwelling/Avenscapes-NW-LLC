@@ -67,9 +67,9 @@
             <a x-on:click.prevent="open = true" class="" href="">Send Us a Text</a>
         
       
-        <div x-show.transition.opacity="open" class="p-4 fixed flex justify-center items-center inset-0 bg-black bg-opacity-75 z-50">
+        <div x-show.transition.opacity="open" class="p-4 fixed flex justify-center items-center inset-0 bg-black text-black bg-opacity-75 z-50">
                 <form x-on:click.away="open = false" x-show.transition="open" class="max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
-                        <h3 class="mb-6 text-2xl font-medium text-center">Send us a Text</h3>
+                        <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
                         <div class="block mb-4 border border-gray-200 rounded-lg">
                             <input type="text" name="first-name" id="1-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
                         </div>
@@ -83,7 +83,7 @@
                             <textarea name="message" cols="5" id="1-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
                         </div>
                         <div class="block">
-                            <button type="button" onclick= "send_sms(1, 'Avenscapes-NW-LLC')" class="w-full px-3 py-4 font-bold font-lg text-white bg-gray-900 rounded-lg">Send</button>
+                            <button type="button" onclick= "send_sms(1, 'Avenscapes-NW-LLC')" class="w-full px-3 py-4 font-bold font-lg text-white  bg-gray-900  rounded-lg">Send</button>
                         </div>
                         
     
@@ -116,8 +116,8 @@
                     <h5 class="text-3xl font-extrabold">Send us a text</h5> 
                 </button>
                 <div x-show.transition.opacity="open" class="p-4 fixed flex justify-center items-center inset-0 bg-black bg-opacity-75 z-50">
-                    <form x-on:click.away="open = false" x-show.transition="open" class="max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
-                            <h3 class="mb-6 text-2xl font-medium text-center">Send us a Text</h3>
+                    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
+                            <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
                             <div class="block mb-4 border border-gray-200 rounded-lg">
                                 <input type="text" name="first-name" id="2-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
                             </div>
@@ -131,7 +131,7 @@
                                 <textarea name="message" cols="5" id="2-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
                             </div>
                             <div class="block">
-                                <button type="button" onclick= "send_sms(2, 'Avenscapes-NW-LLC')" id= "send" class="w-full px-3 py-4 font-bold font-lg text-white bg-gray-900 rounded-lg">Send</button>
+                                <button type="button" onclick= "send_sms(2, 'Avenscapes-NW-LLC')" id= "send" class="w-full px-3 py-4 font-bold font-lg text-white  bg-gray-900  rounded-lg">Send</button>
                             </div>
                             
      
@@ -143,7 +143,7 @@
         </div>
     </div>
     <div class="relative order-first lg:order-last block lg:w-1/2 ">
-        <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/WMG1URWVHF0U38TKWBVQN0JC0AQU8US7S5WE98SQ.jpeg" alt="Hero Image" class="object-cover w-full lg:absolute h-80 lg:h-full">
+        <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/SPGRKLWANMD3H0QELRP46EMD4MATGF7UTGX00LXG.jpeg" alt="Hero Image" class="object-cover w-full lg:absolute h-80 lg:h-full">
     </div>
 </section>
 
@@ -165,11 +165,20 @@
                     About Us
                 </h5>
                 <p class="py-5 px-5 lg:px-0 mb-5 text-center lg:text-left  lg:text-xl">
-                Yard maintenance and home improvement LLC that offers fast, affordable, high quality work. We are a customer-first company and you are always a priority. Our team is professional, trained, and ready to take care of all your lawn care needs.
+                Yard maintenance and home improvement LLC that offers fast, affordable, high quality work. We are a customer-first company and you are always a priority. Our team is professional, trained, and ready to take care of all your lawn care needs. We are based in Lake Stevens and serve the surrounding area.
                 </p>                
             </div>
 
             <div class = "flex flex-row flex-wrap text-center w-full lg:max-w-lg">
+            
+                <div class="pb-30 mx-auto w-1/3 " data-aos="fade-down" data-aos-delay="400">
+                    <span class = "text-gray-400"> <i class="fas fa-user-shield fa-2x "></i> </span>
+                    <div class="mt-5 text-md font-bold  uppercase">
+                        Bonded
+                    </div>
+ 
+                    <br>
+                </div>
             	
 
 
@@ -198,6 +207,16 @@
             	
             	
             
+            
+                <div class="mt-30 mx-auto w-1/3" data-aos="fade-down" data-aos-delay="400">
+                <span class = "text-gray-400"> <i class="fas fa-id-card fa-2x"></i> </span>
+                    
+                    <div class="mt-5 text-md font-bold  uppercase">
+                        Licensed
+                    </div>
+                    
+                </div>
+                
             
             </div>
             
@@ -369,6 +388,14 @@
                 
                     <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/S7AZAW9XO66H3JOOJ7FBJ8ZFD4E0EL1JDSATQOJF.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/0DD08N648DWVNN94ZDYN47ECXXC5GZT9HUDYZD0Y.jpeg" alt="photo of past work" loading="lazy" ></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ZR6WS0DMVBNOKD7ZC5BHU8DDZOH3KMBR0L5R4OPQ.jpeg" alt="photo of past work" loading="lazy" ></div>
+                    
                  
                 </div>     
             </div>
@@ -393,8 +420,8 @@
 
                     
             
-                    <div class="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/2">
-                    <div class="flex items-start ">
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
                         
                         <div class="flex flex-col justify-start items-center lg:items-start ">
                             <h4 class="font-bold  text-gray-200  ">Nick Ornitz</h4>
@@ -414,7 +441,7 @@
                                 
                                 
                             </div>
-                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl lg:text-left   text-white ">"David and the Avenscapes team are fantastic! The do quality work and have years of experience! Highly recommend."</blockquote>                           
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"David and the Avenscapes team are fantastic! The do quality work and have years of experience! Highly recommend."</blockquote>                           
                         </div>
                     </div>
                     
@@ -422,8 +449,8 @@
 
                     
             
-                    <div class="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/2">
-                    <div class="flex items-start ">
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
                         
                         <div class="flex flex-col justify-start items-center lg:items-start ">
                             <h4 class="font-bold  text-gray-200  ">Shannon Smith</h4>
@@ -443,7 +470,7 @@
                                 
                                 
                             </div>
-                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl lg:text-left   text-white ">"The Avenscape team is great! The are friendly and took care of all our lawn care needs with class!"</blockquote>                           
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"The Avenscape team is great! The are friendly and took care of all our lawn care needs with class!"</blockquote>                           
                         </div>
                     </div>
                     
@@ -504,7 +531,7 @@
             height="500px"
             frameborder="0" style="border:0"
             src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBPscVsAYq9Mo6GmcMKF1tUfrWWN2Gt93M
-                &q=,Seattle,Washington," allowfullscreen>
+                &q=,Lake+Stevens,Washington," allowfullscreen>
         </iframe>
     </div>
 </section>
